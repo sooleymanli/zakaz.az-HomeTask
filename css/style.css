@@ -20,11 +20,12 @@ header span{
 
 body section .breadcrumb{
     margin: 20px;
-    padding-left: 130px;
+    
     
 }
 
 body section .breadcrumb span{
+    margin-left: 130px;
     font-size: 12px;
     line-height: 14px;
     font-weight: 300;
