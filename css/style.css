@@ -19,15 +19,19 @@ header span {
   padding: 44px 0;
 }
 
-body section .breadcrumb {
-  margin: 20px;
+body section .content .breadcrumb {
+  padding: 20px 0 10px 0;
+ 
+  width: 1180px;
 }
 
-body section .breadcrumb span {
+
+body section .content .breadcrumb span {
   font-size: 12px;
   line-height: 14px;
   font-weight: 300;
   color: #2d2d2d;
+
 }
 
 section {
@@ -35,18 +39,31 @@ section {
 }
 .content {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .center{
+  display: flex;
+ 
+
 }
 
 .content .left {
   border: 1px solid black;
-  width: 78%;
-  height: 100px;
+  width: 880px;
+  height: 1000px;
+}
+.right-fixed{
+  position: fixed;
+  width: 280px;
 }
 
 .content .right {
-  width: 20%;
+  width: 280px;
 
-  margin-left: 2%;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -68,7 +85,6 @@ section {
 
 .content .right .card-order {
   width: 100%;
-  height: 112px;
   background-color: #FFFFFF;
   margin-top: 10px;
   padding: 7%;
@@ -116,6 +132,8 @@ section {
 .order .buttons .add-to-cart {
   background-color: #f58634;
   color: #fff;
+  transition: 0.1s all ease-in-out;
+
 }
 .order .buttons .add-to-cart:hover {
     background-color: #ee741c;
@@ -124,6 +142,8 @@ section {
 .order .buttons .now-order {
   background-color: #fff;
   color: #f58634;
+  transition: 0.1s all ease-in-out;
+
 }
 
 .order .buttons .now-order:hover {
@@ -173,6 +193,8 @@ line-height: 19px;
 color: #2D2D2D;
 padding: 12px 0;
 cursor: pointer;
+transition: 0.1s all ease-in-out;
+
 }
 .fast-order .one-click-order button:hover{
     background-color: #e2e0e0;
@@ -214,7 +236,7 @@ cursor: pointer;
 
 
  .dropdown-list{
-  width: 14%;
+  width: 240px;
      border: 1px solid #E7E7E7;
      border-radius: 4px;
      padding:12px 15px;
@@ -222,6 +244,7 @@ cursor: pointer;
      margin-top: 5px;
      position: absolute;
      display: none;
+     z-index: 99;
      
  }
  .dropdown-list ul{
@@ -236,6 +259,8 @@ cursor: pointer;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: 0.1s all ease-in-out;
+
   
   }
   .dropdown-list ul li:hover{
@@ -253,3 +278,248 @@ border-radius: 4px;
       justify-content: flex-start;
       align-items: center;
   }
+
+  .credits-part{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  .circle-range{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+  
+  }
+
+  /* Aylıqa bölmə */
+
+  
+
+.range input
+{
+  outline: none;
+	-webkit-appearance: none;
+	background-color: #F6F6F6;
+	height: 4px;
+	width: 100%;
+	margin: 10px auto;
+}
+.range input::-webkit-slider-thumb
+{
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab; 
+}            
+
+.range input::-moz-range-thumb
+{
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab; 
+}
+.range input::-ms-thumb
+{
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab; 
+}
+.range-step{
+	position: relative;                
+}
+
+.range-max{
+	float: right;
+}
+.range-step input::-webkit-slider-thumb
+{
+	background: transparent;
+  
+}            
+.range-step input::-moz-range-thumb
+{
+	background: transparent;
+}
+.range-step input::-ms-thumb
+{
+	background: transparent;
+}
+.range-step datalist {
+	position:relative;
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	bottom: 22px;
+
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */                
+	user-select: none; /* Standard */
+
+	pointer-events:none;  
+ 
+}
+.range-step datalist option {
+	width: 18px;
+	height: 18px;
+	min-height: 10px;
+	border-radius: 100px;
+	border:0.5px solid #F58634 !important;
+	white-space: nowrap;       
+  padding:10;
+  line-height: 90px;
+ font-size: 14px;
+ color: #2D2D2D;
+font-weight: 300;
+text-align: center;
+
+}
+
+.range-step datalist option .active-option {
+	width: 10px;
+	height: 10px;
+	min-height: 10px;
+	border-radius: 100px;
+
+	white-space: nowrap;       
+  padding:10;
+  line-height: 70px;
+ font-size: 14px;
+ color: red;
+font-weight: 300;
+
+
+}
+
+
+
+
+ .range-step-popup output 
+{ 
+	position: absolute;
+	background-color: green;                
+	width: 30px;
+	height: 30px; 
+	text-align: center; 
+	color: white; 
+	border-radius: 100px; 
+	display: inline-block; 
+	font-size:12px;
+	bottom: 1000%;
+	left: 0;
+	vertical-align: middle;
+	line-height: 30px;
+
+}
+.range-step-popup .range-output-square{
+	padding: 0 55px; 
+	min-width: 25px;
+	width: auto !important;                
+	border-radius: 5px !important;
+}
+.range-step-popup output:after 
+{ 
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 10px solid green;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	top: 90%;
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -1px;
+}
+.range-step-popup datalist{
+  overflow:hidden;
+}
+.range-step{
+  margin:0 0px;
+}
+.range-step-popup{
+  margin:40px 40px;
+}
+
+
+
+.credits-button{
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.credits-button .card-prices{
+  width: 47%;
+  background: #F6F6F6;
+  border: 1px solid #F6F6F6;
+  border-radius: 4px;
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(45, 45, 45, 0.7);;
+}
+
+
+.credits-button .with-card-order{
+  margin-left: 6%;
+  width: 47%;
+  background: #FFFFFF;
+  border: 1px solid #169F00;
+  border-radius: 4px;
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2FA71C;
+  font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+cursor: pointer;
+transition: 0.1s all ease-in-out;
+outline: none;
+}
+
+.credits-button .with-card-order:hover{
+  background: #169F00;
+  color: #fff;
+
+}
+
+
+
+
+
+@media only screen and (max-width:1280px){
+  .content .left {
+    border: 1px solid black;
+    width: 73% ;
+    height: 100px;
+  }
+  
+  .content .right {
+    width: 25%;
+  
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+

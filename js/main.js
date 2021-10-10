@@ -77,33 +77,20 @@ document.addEventListener("DOMContentLoaded", function () {
 // Kredit kartı seçimi
 
 
-
-
-
-
-
-// $(document).ready(function() {
-// $(".dropdown").click(()=>{
-//     $(".dropdown-list").css("display","block")
-// })
-
-
-
-  
-// });
-
 $(document).ready(function() {
    
        
        $(".list-item").click((e)=>{
            $("#cardChoose").html(e.target.innerHTML)
            $("#cardChoose").css("color","#000")
+           $(".credits-part").slideDown(300)
            }) 
     
         
         $('.dropdown').click(function () {
             $(this).attr('tabindex', 1).focus();
             $(this).find('.dropdown-list').slideToggle(300);
+            
         });
         $('.dropdown').focusout(function () {
           
@@ -114,3 +101,82 @@ $(document).ready(function() {
     });
     
     
+
+    // Aylıqa bölmə
+
+    let creditRange = document.querySelector("#credit-range")
+let option = document.querySelectorAll(".option-item")
+document.querySelectorAll(".range-step").forEach(function (ctrl) {
+	var el = ctrl.querySelector('input');
+	var output = ctrl.querySelector('output');
+
+	el.oninput = function () {
+		// rənglər
+		ctrl.querySelectorAll("option").forEach(function (opt) {
+			if (opt.value <= el.valueAsNumber) {
+				opt.style.backgroundColor = 'white';
+				opt.style.border = '1px solid #F58634'
+			}
+			else {
+				opt.style.backgroundColor = 'white';
+				opt.style.border = '1px solid #D0D0D0'
+			}
+		});
+		//  əvvəl və sonrakı rənglər
+		var valPercent = (el.valueAsNumber - parseInt(el.min)) / (parseInt(el.max) - parseInt(el.min));
+		var style = 'background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(' +
+			valPercent + ', #F58634), color-stop(' +
+			valPercent + ', #F6F6F6));';
+		el.style = style;
+
+
+
+		option.forEach(e => {
+			e.style.color = "#2D2D2D";
+			e.style.height = "18px";
+			e.style.width = "18px"
+			e.style.position = "static"
+			e.style.lineHeight = "90px"
+			e.style.fontSize = "14px"
+			e.style.fontWeight = "400"
+			e.style.border = "0.5px solid #F58634 !important;"
+			e.innerHTML = e.value
+
+            if(e.value >= option[creditRange.value]){
+                e.style.border = "5.5px solid #F58634 !important;"
+
+            }
+
+
+		})
+
+		option[creditRange.value - 1].style.color = "#F58634"
+		option[creditRange.value - 1].style.width = "28px"
+		option[creditRange.value - 1].style.height = "28px"
+		option[creditRange.value - 1].style.position = "relative"
+		option[creditRange.value - 1].style.bottom = "5px"
+		option[creditRange.value - 1].style.lineHeight = "100px"
+		option[creditRange.value - 1].style.fontSize = "16px"
+		option[creditRange.value - 1].style.fontWeight = "bold"
+		option[creditRange.value - 1].style.border = "1px solid #F58634 !important;"
+
+		option[creditRange.value - 1].innerHTML = option[creditRange.value - 1].innerHTML + " " + "ay"
+
+		if ((' ' + ctrl.className + ' ').indexOf(' ' + 'range-step-popup' + ' ') > -1) {
+			var selectedOpt = ctrl.querySelector('option[value="' + el.value + '"]');
+			output.innerText = selectedOpt.text;
+			output.style.left = "50%";
+			selectedOpt.style.backgroundColor = "red"
+			selectedOpt.style.color = "red"
+			output.style.left = ((selectedOpt.offsetLeft + selectedOpt.offsetWidth / 2) - output.offsetWidth / 2) + 'px';
+		}
+	};
+	el.oninput();
+});
+
+window.onresize = function () {
+	document.querySelectorAll(".range").forEach(function (ctrl) {
+		var el = ctrl.querySelector('input');
+		el.oninput();
+	});
+};
