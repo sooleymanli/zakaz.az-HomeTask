@@ -1,34 +1,205 @@
-@import url('/fonts/fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+ 
 }
-body{
-    background-color: #E5E5E5;
-}
-
-header span{
-    font-size: 36px;
-    font-family: Roboto;
-    text-align: center;
-    display: block;
-    background-color: #fff;
-    padding: 44px 0;
+body {
+  background-color: #f6f6f6;
 }
 
-body section .breadcrumb{
-    margin: 20px;
+header span {
+  font-size: 36px;
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  padding: 44px 0;
+}
+
+body section .breadcrumb {
+  margin: 20px;
+}
+
+body section .breadcrumb span {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #2d2d2d;
+}
+
+section {
+  padding: 0 9%;
+}
+.content {
+  display: flex;
+}
+
+.content .left {
+  border: 1px solid black;
+  width: 78%;
+  height: 100px;
+}
+
+.content .right {
+  width: 20%;
+
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .right .order {
+  width: 100%;
+ 
+  border-radius: 4px;
+  background-color: #393939;
+  padding: 7%;
+}
+.content .right .fast-order {
+  width: 100%;
+ 
+ border-radius: 4px;
+  margin-top: 10px;
+  background-color: #FFFFFF;
+}
+
+.content .right .card-order {
+  width: 100%;
+  height: 112px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.order .prices {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.order .prices .desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.order .prices .price {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.order .prices .old-price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 10px;
+  text-decoration: line-through;
+}
+.order .buttons button {
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 13px 0;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.order .buttons .add-to-cart {
+  background-color: #f58634;
+  color: #fff;
+}
+.order .buttons .add-to-cart:hover {
+    background-color: #ee741c;
     
-    
+  }
+.order .buttons .now-order {
+  background-color: #fff;
+  color: #f58634;
 }
 
-body section .breadcrumb span{
-    margin-left: 130px;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 300;
-    color:#2D2D2D;
-    font-family: Roboto;
+.order .buttons .now-order:hover {
+    background-color: rgb(235, 227, 227);
+    color: #f58634;
+  }
+
+  .fast-order{
+    padding: 7%;
+  }
+  .fast-order .title{
+      display: flex;
+      justify-content: space-between;
+  }
+  .right .fast-order .title span #text {
+    color: #2d2d2d;
+    font-family: Robotom;
 }
+.fast-order .title i{
+    border-radius: 2px;
+    color: #2d2d2d;
+}
+
+.fast-order .phone-input{
+    margin-top: 15px;
+}
+.fast-order .phone-input input{
+ border: none;
+ outline: none;
+ font-size: 18px;
+ color: #464646;;
+}
+
+.fast-order .one-click-order{
+    margin-top: 15px;
+}
+
+.fast-order .one-click-order button{
+   background-color: #F6F6F6;
+   border-radius: 4px;
+   outline: none;
+   border: none;
+   width: 100%;
+   font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #2D2D2D;
+padding: 12px 0;
+}
+.fast-order .one-click-order button:hover{
+    background-color: #e2e0e0;
+   
+ }
+
+ .card-order .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D2D2D;
+
+ }
+
+ 
+ .card-order .dropdown{
+    width: 100%;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding:12px 15px;
+    margin-top: 10px;
+ }
+
+ .card-order .dropdown span{
+   font-size:16px;
+   color: #868686;
+   line-height: 19px;
+   cursor: default;
+
+ }

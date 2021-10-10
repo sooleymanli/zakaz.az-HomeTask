@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zakaz TASK</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +16,52 @@
         <div class="breadcrumb">
             <span>Lorem ipsum / Lorem ipsum / Lorem ipsum / Lorem ipsum</span>
         </div>
+        <div class="content">
+            <div class="left"></div>
+            <div class="right">
+                <div class="order">
+                    <div class="prices">
+                        <span class="desc">Qiyməti</span>
+                        <span class="price">2189.99 AZN</span>
+                        <span class="old-price" >2389.99 AZN</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="add-to-cart">Səbətə at</button>
+                        <button class="now-order">İndi al</button>
+                    </div>
+                </div>
+                <div class="fast-order">
+                    <div class="title">
+                        <span id="text" style="font-weight: 500;">Sürətli sifariş</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="phone-input">
+                        <input type="tel"  class="phone" data-phonemask="+994  (466) ___ - __ - __" />
+
+                        
+                    </div>
+                    <div class="one-click-order">
+                        <button style="font-weight: 500;" >Bir kliklə al</button>
+                    </div>
+                </div>
+                <div class="card-order">
+                    <div class="title" style="font-weight: 500;">Kredit kartı ilə sifariş</div>
+                    <div class="dropdown">
+                        <span>Kart seçin</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-list">
+                        <ul>
+                            <li>Birkart</li>
+                            <li>Alkart</li>
+                            <li>Tamkart</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="js/main.js"></script>
+    <script src="js/phone-mask.js"></script>
 </body>
 </html>
