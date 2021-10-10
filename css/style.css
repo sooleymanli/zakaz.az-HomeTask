@@ -111,6 +111,7 @@ section {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  cursor: pointer;
 }
 .order .buttons .add-to-cart {
   background-color: #f58634;
@@ -171,6 +172,7 @@ font-size: 16px;
 line-height: 19px;
 color: #2D2D2D;
 padding: 12px 0;
+cursor: pointer;
 }
 .fast-order .one-click-order button:hover{
     background-color: #e2e0e0;
@@ -186,7 +188,7 @@ padding: 12px 0;
  }
 
  
- .card-order .dropdown{
+ .card-order .dropdown .input{
     width: 100%;
     border: 1px solid #E7E7E7;
     border-radius: 4px;
@@ -195,11 +197,59 @@ padding: 12px 0;
     padding:12px 15px;
     margin-top: 10px;
  }
+ .card-order .dropdown:focus{
+    outline: none;
+  
+  box-shadow: none;
+   
+ }
 
- .card-order .dropdown span{
+ .card-order .dropdown .input span{
    font-size:16px;
    color: #868686;
    line-height: 19px;
    cursor: default;
 
  }
+
+
+ .dropdown-list{
+  width: 14%;
+     border: 1px solid #E7E7E7;
+     border-radius: 4px;
+     padding:12px 15px;
+     background-color: #fff;
+     margin-top: 5px;
+     position: absolute;
+     display: none;
+     
+ }
+ .dropdown-list ul{
+  list-style-type: none;
+ 
+}
+
+.dropdown-list ul li{
+    padding:12px 15px;
+    font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  }
+  .dropdown-list ul li:hover{
+cursor: pointer;
+background-color: #f5f5f5;
+border-radius: 4px;
+  }
+
+  img.card{
+      width: 25px;
+      margin-right: 10px;
+  }
+  #cardChoose{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }

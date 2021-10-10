@@ -1,3 +1,5 @@
+// Sürətli sifariş bölməsi
+
 class PhoneField {
     constructor(a, b = "+994(___)___-____", c = "_") {
         (this.handler = a),
@@ -67,3 +69,48 @@ document.addEventListener("DOMContentLoaded", function () {
         b = [];
     for (let c = 0; c < a.length; c++) b.push(new PhoneField(a[c], a[c].dataset.phonemask, a[c].dataset.placeholder));
 });
+
+
+
+
+
+// Kredit kartı seçimi
+
+
+
+
+
+
+
+// $(document).ready(function() {
+// $(".dropdown").click(()=>{
+//     $(".dropdown-list").css("display","block")
+// })
+
+
+
+  
+// });
+
+$(document).ready(function() {
+   
+       
+       $(".list-item").click((e)=>{
+           $("#cardChoose").html(e.target.innerHTML)
+           $("#cardChoose").css("color","#000")
+           }) 
+    
+        
+        $('.dropdown').click(function () {
+            $(this).attr('tabindex', 1).focus();
+            $(this).find('.dropdown-list').slideToggle(300);
+        });
+        $('.dropdown').focusout(function () {
+          
+            $(this).find('.dropdown-list').slideUp(300);
+        });
+
+
+    });
+    
+    
