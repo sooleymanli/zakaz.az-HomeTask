@@ -180,3 +180,22 @@ window.onresize = function () {
 		el.oninput();
 	});
 };
+
+
+// Product photos slide
+
+$(document).ready(()=>{
+   
+    $('.product-left-bottom-img').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+
+})
+
+
+
+
+
+

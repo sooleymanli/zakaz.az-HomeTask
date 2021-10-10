@@ -51,9 +51,10 @@ section {
 }
 
 .content .left {
-  border: 1px solid black;
   width: 880px;
-  height: 1000px;
+ display: flex;
+ flex-direction: column;
+ border-radius: 4px;
 }
 .right-fixed{
   position: fixed;
@@ -503,7 +504,145 @@ outline: none;
 
 
 
+.content .left div{
+  width: 100%;
+  
+}
 
+
+.content .left .product{
+width: 100%;
+display: flex;
+background-color: #fff;
+}
+
+.content .left .product .product-left{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.content .left .product .product-left .product-left-top{
+  width: 380px;
+  height: 380px;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .left .product .product-left .product-left-top:after{
+  width: 43px;
+  height: 22px;
+ content: "Yeni";
+ background-color: #4CC214;
+ border-radius: 0 4px 4px 4px;
+ font-size: 12px;
+line-height: 14px;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+transform: translateX(168px) translateY(-179px);
+}
+
+.content .left .product .product-left .product-left-top img{
+  width: 283px;
+  height: 264px;
+
+}
+
+.product-left-bottom{
+  width: 100%;
+  display: flex;
+}
+
+.product-left-bottom-img{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.product-left-bottom-img div{
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 10px;
+  border:1px solid #EDEDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  padding: 12px;
+}
+.product-left-bottom-img  i{
+  color: #EDEDED;
+ 
+ font-size: 14px;
+}
+
+
+.product-left-bottom-img div img{
+  width: 35px;
+  height: 35px;
+ 
+}
+
+.product-right{
+
+  padding: 10px 20px;
+}
+.product-right .title{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #EDEDED;
+  padding-bottom: 24px;
+}
+
+.product-right .title strong{
+font-weight: 500;
+font-size: 24px;
+line-height: 132.69%;
+text-transform: uppercase;
+color: #2D2D2D;
+}
+
+.product-right .title .title-bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+
+.product-right .title .title-bottom .title-bottom-left span{
+  color: #2D2D2D;
+  font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+}
+
+
+.product-right .title .title-bottom .title-bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.product-right .title .title-bottom .title-bottom-right img.just{
+margin-left: 24px;
+width: 24px;
+height: 24px;
+}
+
+.product-right .title .title-bottom .title-bottom-right img.fav{
+
+  width: 24px;
+  height: 20px;
+  }
 
 @media only screen and (max-width:1280px){
   .content .left {
