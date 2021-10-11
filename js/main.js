@@ -182,8 +182,25 @@ window.onresize = function () {
 };
 
 
+let descText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo..."
 
+$(document).ready(()=>{
+   
+    $("#text").html(
+        `${descText.substring(0,244)}...     <span class="read-more" >ardını oxu</span>`
+    )
 
+  
+
+    $(".read-more").click(()=>{
+        $("#text").html(
+            `${descText}`
+        )
+    })
+
+   
+  
+})
 
 
 
