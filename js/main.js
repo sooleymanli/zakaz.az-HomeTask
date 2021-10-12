@@ -199,6 +199,21 @@ $(".show-more-tr").click(()=>{
 
 
     })
+
+
+   // Mobil versiyada Aşağı enəndə  bottom-menunun  görünməsi
+
+    $(document).scroll(()=>{
+        if(window.scrollY>=860){
+            $(".mobile-fixed-bottom").fadeIn(400)
+        }else{
+           
+            $(".mobile-fixed-bottom").fadeOut(400)
+
+        }
+
+
+    })
   
     //  "Xüsusiyyətlər" və "rəylərin" altına borderin çəkilməsi
 
