@@ -127,7 +127,52 @@ $(document).ready(()=>{
     })
 
    
-    
+   
+
+
+    // Rəng eçimi mobil üçün
+    $(".color-item").click((e)=>{
+        $(".color-name").html(e.target.innerHTML)
+      
+        $(".color-dropdown-list").slideUp(300)
+        }) 
+ 
+
+  $(".color-dropdown").click(()=>{
+      $(this).attr('tabindex', 1).focus();
+      $('.color-dropdown-list').slideToggle(300);
+
+
+  })
+  
+  $(".color-dropdown").focusout(()=>{
+     $('.color-dropdown-list').slideUp(300);
+});
+
+
+
+
+ // Yaddaş seçimi mobil üçün
+
+ $(".memory-item").click((e)=>{
+    $(".memory-value").html(e.target.innerHTML)
+  
+    $(".memory-dropdown-list").slideUp(300)
+    }) 
+
+
+$(".memory-dropdown").click(()=>{
+  $(this).attr('tabindex', 1).focus();
+  $('.memory-dropdown-list').slideToggle(300);
+
+
+})
+
+$(".memory-dropdown").focusout(()=>{
+ $('.memory-dropdown-list').slideUp(300);
+});
+
+
 
    // Aşağı enəndə  "Xüsusiyyətlər" və "rəylərin" görünməsi
 
