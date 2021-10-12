@@ -174,6 +174,19 @@ $(".memory-dropdown").focusout(()=>{
 
 
 
+
+
+// Mobil üçün xüsusiyyətlərin hamısının görülməsi
+
+$(".show-more-tr").click(()=>{
+    $(".show-more-tr").removeClass("shadow")
+    $(".mobile-product-feature-table .table table tr").css("display","table-row")
+    $(".mobile-product-feature-table-bottom").css("display","none")
+})
+
+
+
+
    // Aşağı enəndə  "Xüsusiyyətlər" və "rəylərin" görünməsi
 
     $(document).scroll(()=>{

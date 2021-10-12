@@ -1181,6 +1181,7 @@ font-weight: 400;
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-right: 20px;
 }
 
 .mobile-product-feature .left .color{
@@ -1189,13 +1190,14 @@ margin-top: 10px;
 }
 
 .mobile-product-feature .right{
+ 
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
 .mobile-product-feature .left .color .color-dropdown{
-  width: 95%;
+  width: 97%;
   border: 1px solid #EDEDED;
 height: 33px;
 border-radius: 4px;
@@ -1220,7 +1222,7 @@ padding: 0 20px 0 10px;
   color: #2D2D2D;
 }
  .color-dropdown-list,.memory-dropdown-list{
-   width: 44%;
+   width: 43%;
    border: 1px solid #EDEDED;
 margin-top: 5px;
 border-radius: 4px;
@@ -1272,7 +1274,8 @@ background-color: #fff;
  }
 
 .mobile-product-feature .right .memory .memory-dropdown{
-  width: 95%;
+ 
+  width: 97%;
   border: 1px solid #EDEDED;
 height: 33px;
 border-radius: 4px;
@@ -1281,6 +1284,199 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0 20px 0 10px;}
+
+
+
+.mobile-product-order{
+  width: 100%;
+  height: 202px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #2D2D2D;
+border: 1px solid #F6F6F6;
+border-radius: 4px;
+margin-top: 20px;
+}
+
+.mobile-product-order .mobile-prices {
+ width: 100%;
+ display: flex;
+}
+.mobile-product-order .mobile-prices .left,.mobile-product-order .mobile-prices .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 14px;
+line-height: 16px;
+ }
+
+
+ .mobile-product-order .mobile-prices .left .top,
+ .mobile-product-order .mobile-prices .right .top {
+  margin-bottom: 5px;
+ }
+ 
+
+ .mobile-product-order .mobile-prices .left .bottom,
+ .mobile-product-order .mobile-prices .right .bottom {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+ }
+ 
+
+
+.mobile-product-order .order-button{
+  width: 100%;
+  height: 51px;
+  font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+background-color: #F58634;
+border-radius: 4px;
+margin-top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.mobile-product-order .order-button:hover{
+ background-color: #f5812f;
+
+}
+
+
+.mobile-product-order .other-buttons{
+  width: 100%;
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.mobile-product-order .other-buttons .credit-cart-order,
+.mobile-product-order .other-buttons .one-click-order
+{
+width: 49% ;
+height: 100%;
+
+background: #FFFFFF;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #2D2D2D;
+
+}
+
+
+.mobile-product-order .other-buttons .credit-cart-order:hover,
+.mobile-product-order .other-buttons .one-click-order:hover
+{
+
+
+background: #f5812f;
+color: #fff;
+
+}
+
+.mobile-product-feature-table{
+  width: 100%;
+  border: 1px solid #EDEDED;
+box-sizing: border-box;
+border-radius: 4px;
+margin-top: 15px;
+display: flex;
+flex-direction: column;
+}
+.mobile-product-feature-table .title{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #F6F6F6;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 132.69%;
+   color: #2D2D2D;
+   padding-left: 15px;
+ 
+}
+.mobile-product-feature-table .table{
+  width: 100%;
+padding-left: 15px;
+
+
+}
+
+.mobile-product-feature-table .table table{
+  width: 100%;
+
+
+}
+
+.mobile-product-feature-table .table table tr td{
+padding-top: 15px; 
+font-weight: 300;
+font-size: 14px;
+line-height: 132.69%;
+
+color: #2D2D2D;
+}
+
+.mobile-product-feature-table .table table tr:not(#first):not(#second):not(#third) {
+  display: none;
+ 
+  }
+
+  .mobile-product-feature-table-bottom{
+       width: 100%;
+    height: 40px;
+  }
+  
+  .mobile-product-feature-table-bottom .show-more-tr{
+    font-size: 16px;
+line-height: 166.69%;
+padding: 5px 17px;
+color: #2D2D2D;
+font-weight: 400;
+  }.mobile-product-feature-table-bottom .show-more-tr i{
+  margin-left: 10px;
+  }
+  
+  .shadow{
+    box-shadow: 0px -16px 15px -6px rgba(255,255,255,1);
+
+  }
+
+
+
+.mobile-products-comment{
+  width: 100%;
+  height: 687px;
+  border: 1px solid #EDEDED;
+border-radius: 4px;
+margin-top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.mobile-products-comment span{
+ 
+  word-wrap: break-word;
+    color: #2D2D2D;
+  font-weight: 500;
+  font-size: 56px;
+  letter-spacing: 2px;
+text-transform: uppercase;
+}
+
 
 
 
