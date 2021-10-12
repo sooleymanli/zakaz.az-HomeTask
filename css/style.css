@@ -1141,7 +1141,7 @@ img.card {
 .mobile-product .product-photo::before {
   width: 34px;
   height: 17px;
-  content: url(./img/360.svg);
+  content: url(../img/360.svg);
   position: absolute;
   left: 10%;
   transform: translateY(30px);
@@ -1149,7 +1149,7 @@ img.card {
 .mobile-product .product-photo .img::before {
   width: 35.2px;
   height: 30.8px;
-  content: url(./img/video.svg);
+  content: url(../img/video.svg);
   position: absolute;
   left: 9%;
   transform: translateY(-60px);
