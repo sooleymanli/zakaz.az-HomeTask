@@ -46,7 +46,9 @@ section {
 .content .center {
   display: flex;
 }
-
+.bottom-menu{
+  display: none;
+}
 .content .left {
   width: 880px;
   display: flex;
@@ -1141,7 +1143,7 @@ img.card {
 .mobile-product .product-photo::before {
   width: 34px;
   height: 17px;
-  content: url(img/360.svg);
+  content: url(../img/360.svg);
   position: absolute;
   left: 10%;
   transform: translateY(30px);
@@ -1149,7 +1151,7 @@ img.card {
 .mobile-product .product-photo .img::before {
   width: 35.2px;
   height: 30.8px;
-  content: url(img/video.svg);
+  content: url(../img/video.svg);
   position: absolute;
   left: 9%;
   transform: translateY(-60px);
@@ -1181,6 +1183,7 @@ font-weight: 400;
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-right: 20px;
 }
 
 .mobile-product-feature .left .color{
@@ -1189,13 +1192,14 @@ margin-top: 10px;
 }
 
 .mobile-product-feature .right{
+ 
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
 .mobile-product-feature .left .color .color-dropdown{
-  width: 100%;
+  width: 97%;
   border: 1px solid #EDEDED;
 height: 33px;
 border-radius: 4px;
@@ -1204,17 +1208,362 @@ justify-content: space-between;
 align-items: center;
 padding: 0 20px 0 10px;
 }
-
-.mobile-product-feature .left .color .color-dropdown .color-name span #circle{
+.mobile-product-feature .left .color .color-dropdown .color-name {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.mobile-product-feature .left .color .color-dropdown .color-name span#circle{
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background-color:  #2D2D2D;
+  display: flex;
+  margin-right: 10px;
 }
+.mobile-product-feature .left .color .color-dropdown .color-name span#color-name{
+  color: #2D2D2D;
+}
+ .color-dropdown-list,.memory-dropdown-list{
+   width: 43%;
+   border: 1px solid #EDEDED;
+margin-top: 5px;
+border-radius: 4px;
+display: none;
+position: absolute;
+background-color: #fff;
+ }
+
+ .color-dropdown-list .color-item{
+   width: 100%;
+   height: 33px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding-left: 10px;
+}
+
+.memory-dropdown-list .memory-item{
+  width: 100%;
+  height: 33px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.color-dropdown-list .color-item:hover,.memory-dropdown-list .memory-item:hover {
+ 
+  background-color: #8bec5d;
+  }
+
+  .color-dropdown-list .color-item span#circle{
+    width: 13px;
+  height: 13px;
+  border-radius: 50%;
+
+  display: flex;
+  margin-right: 10px;
+ }
+
+ .black{
+   background-color: black;
+ }
+ .red{
+   background-color: red;
+ }
+
+ .yellow{
+   background-color: rgb(212, 182, 7);
+ }
+
+.mobile-product-feature .right .memory .memory-dropdown{
+ 
+  width: 97%;
+  border: 1px solid #EDEDED;
+height: 33px;
+border-radius: 4px;
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px 0 10px;}
+
+
+
+.mobile-product-order{
+  width: 100%;
+  height: 202px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #2D2D2D;
+border: 1px solid #F6F6F6;
+border-radius: 4px;
+margin-top: 20px;
+}
+
+.mobile-product-order .mobile-prices {
+ width: 100%;
+ display: flex;
+}
+.mobile-product-order .mobile-prices .left,.mobile-product-order .mobile-prices .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 14px;
+line-height: 16px;
+ }
+
+
+ .mobile-product-order .mobile-prices .left .top,
+ .mobile-product-order .mobile-prices .right .top {
+  margin-bottom: 5px;
+ }
+ 
+
+ .mobile-product-order .mobile-prices .left .bottom,
+ .mobile-product-order .mobile-prices .right .bottom {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+ }
  
 
 
+.mobile-product-order .order-button{
+  width: 100%;
+  height: 51px;
+  font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+background-color: #F58634;
+border-radius: 4px;
+margin-top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+.mobile-product-order .order-button:hover{
+ background-color: #f5812f;
+
+}
+
+
+.mobile-product-order .other-buttons{
+  width: 100%;
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.mobile-product-order .other-buttons .credit-cart-order,
+.mobile-product-order .other-buttons .one-click-order
+{
+width: 49% ;
+height: 100%;
+
+background: #FFFFFF;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #2D2D2D;
+
+}
+
+
+.mobile-product-order .other-buttons .credit-cart-order:hover,
+.mobile-product-order .other-buttons .one-click-order:hover
+{
+
+
+background: #f5812f;
+color: #fff;
+
+}
+
+.mobile-product-feature-table{
+  width: 100%;
+  border: 1px solid #EDEDED;
+box-sizing: border-box;
+border-radius: 4px;
+margin-top: 15px;
+display: flex;
+flex-direction: column;
+padding-bottom: 5px;
+}
+.mobile-product-feature-table .title{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #F6F6F6;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 132.69%;
+   color: #2D2D2D;
+   padding-left: 15px;
+ 
+}
+.mobile-product-feature-table .table{
+  width: 100%;
+padding: 0 0 0 15px;
+
+}
+
+.mobile-product-feature-table .table table{
+  width: 100%;
+
+
+}
+
+.mobile-product-feature-table .table table tr td{
+padding-top: 15px; 
+font-weight: 300;
+font-size: 14px;
+line-height: 132.69%;
+
+color: #2D2D2D;
+}
+
+.mobile-product-feature-table .table table tr:not(#first):not(#second):not(#third) {
+  display: none;
+ 
+  }
+
+  .mobile-product-feature-table-bottom{
+       width: 100%;
+    height: 40px;
+  }
+  
+  .mobile-product-feature-table-bottom .show-more-tr{
+    font-size: 16px;
+line-height: 166.69%;
+padding: 5px 17px;
+color: #2D2D2D;
+font-weight: 400;
+  }.mobile-product-feature-table-bottom .show-more-tr i{
+  margin-left: 10px;
+  }
+  
+  .shadow{
+    box-shadow: 0px -16px 15px -6px rgba(255,255,255,1);
+
+  }
+
+
+
+.mobile-products-comment{
+  width: 100%;
+  height: 887px;
+  border: 1px solid #EDEDED;
+border-radius: 4px;
+margin-top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 172px;
+}
+.mobile-products-comment span{
+ 
+  word-wrap: break-word;
+    color: #2D2D2D;
+  font-weight: 500;
+  font-size: 56px;
+  letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.mobile-fixed-bottom{
+  width: 100%;
+  height: 125px;
+  background: #2D2D2D;
+  border-radius: 0px;
+  position: fixed;
+  bottom: 0;
+  border-radius: 4px 4px 0 0;
+  display: none;
+
+ 
+}
+.mobile-fixed-bottom .top{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding-top: 12px;
+  
+}
+.mobile-fixed-bottom .top div{
+  display: flex;
+  padding: 0px 20px;
+  width: 50%;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+text-transform: capitalize;
+display: flex;
+align-items: flex-start;
+}
+.mobile-fixed-bottom .top div:last-child{
+ border-left: 1px solid #fff;
+}
+
+
+.mobile-fixed-bottom .top div span:last-child{
+  font-size: 14px;
+line-height: 16px;
+font-weight: 500;
+  margin-top: 10px;
+  }
+  
+.mobile-fixed-bottom .bottom{
+  width: 100%;
+  display: flex;
+  padding: 10px 15px 0px 15px;
+}
+.mobile-fixed-bottom .bottom div{
+  width: 28%;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+border-radius: 4px;
+font-size: 80%;
+
+color: #2D2D2D;
+padding: 7px 10px;
+font-weight: 500;
+margin: 0 2.5px;
+ 
+}
+.mobile-fixed-bottom .bottom div:hover{
+cursor: pointer;
+background-color: #2fa71c;
+color: #fff;
+ 
+}
+.mobile-fixed-bottom .bottom div:last-child{
+  width: 39%;
+  background: #F58634;
+ color: #fff;
+ font-weight: 500;
+ font-size: 100%;
+}
+.mobile-fixed-bottom .bottom div:last-child:hover{
+ 
+  background: #ff0000;
+ color: #fff;
+ 
+}
 @media only screen and (max-width: 1280px) {
   .content .left {
     border: 1px solid black;
@@ -1235,10 +1584,12 @@ padding: 0 20px 0 10px;
   .mobile {
     display: flex;
   }
+  .bottom-menu{
+    display: block;
+  }
 }
 
-@media only screen and (max-width: 576px) {
-}
+
 
 @keyframes fadeIn {
   from {
